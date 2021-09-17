@@ -2,5 +2,5 @@ version: "2.4"
 services:
   redis:
     image: "redis:alpine"
-    mem_limit: 52428800 # this works OK
-    # mem_limit: ${REDIS_MEM_LIMIT} # this causes panic: 'invalid type for size types.UnitBytes'
+    #mem_limit: 52428800 # this works OK
+    mem_limit: ${REDIS_MEM_LIMIT} # this causes panic: 'invalid type for size types.UnitBytes'
